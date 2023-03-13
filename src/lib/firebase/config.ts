@@ -30,5 +30,6 @@ const bucket = getStorage(app);
 
 // get authentication
 const auth = getAuth(app);
+auth.useDeviceLanguage();
 
 export { db, bucket, auth };
