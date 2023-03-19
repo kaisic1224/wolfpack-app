@@ -30,13 +30,16 @@ export default function Home() {
   // console.log(users);
   return (
     <main className={styles.main}>
-            <button
+      <h1 className={styles.appTitle}>Welcome to the WolfPack App</h1>
+      <image className={styles.logo}></image>
+            <button 
+      className={styles.signInButton}
       onClick={async() => {
         const provider = new GoogleAuthProvider();
         const res = await signIn();
         console.log(res);
       }}
-      >sign in</button>
+      >Sign In</button>
     </main>
   );
 }
